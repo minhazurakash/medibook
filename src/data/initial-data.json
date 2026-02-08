@@ -3,7 +3,7 @@
     {
       "id": "doc-1",
       "email": "dr.sarah@example.com",
-      "name": "Dr. Sarah Johnson",
+      "name": "Dr. Tasin",
       "role": "doctor",
       "phone": "+1234567890",
       "specialization": "Cardiologist",
@@ -16,16 +16,64 @@
       "reviewCount": 124,
       "bio": "Board-certified cardiologist with expertise in preventive cardiology and heart failure management. Dr. Johnson has helped thousands of patients improve their heart health through personalized treatment plans.",
       "availability": [
-        { "day": "Monday", "slots": [{ "id": "1", "startTime": "09:00", "endTime": "09:30", "isBooked": false }, { "id": "1a", "startTime": "09:30", "endTime": "10:00", "isBooked": false }, { "id": "1b", "startTime": "10:00", "endTime": "10:30", "isBooked": false }] },
-        { "day": "Wednesday", "slots": [{ "id": "2", "startTime": "10:00", "endTime": "10:30", "isBooked": false }, { "id": "2a", "startTime": "14:00", "endTime": "14:30", "isBooked": false }] },
-        { "day": "Friday", "slots": [{ "id": "2b", "startTime": "11:00", "endTime": "11:30", "isBooked": false }] }
+        {
+          "day": "Monday",
+          "slots": [
+            {
+              "id": "1",
+              "startTime": "09:00",
+              "endTime": "09:30",
+              "isBooked": false
+            },
+            {
+              "id": "1a",
+              "startTime": "09:30",
+              "endTime": "10:00",
+              "isBooked": false
+            },
+            {
+              "id": "1b",
+              "startTime": "10:00",
+              "endTime": "10:30",
+              "isBooked": false
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "slots": [
+            {
+              "id": "2",
+              "startTime": "10:00",
+              "endTime": "10:30",
+              "isBooked": false
+            },
+            {
+              "id": "2a",
+              "startTime": "14:00",
+              "endTime": "14:30",
+              "isBooked": false
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "slots": [
+            {
+              "id": "2b",
+              "startTime": "11:00",
+              "endTime": "11:30",
+              "isBooked": false
+            }
+          ]
+        }
       ],
       "isApproved": true
     },
     {
       "id": "doc-2",
       "email": "dr.michael@example.com",
-      "name": "Dr. Michael Chen",
+      "name": "Dr. Monjurul",
       "role": "doctor",
       "phone": "+1234567891",
       "specialization": "Dermatologist",
@@ -38,8 +86,40 @@
       "reviewCount": 89,
       "bio": "Specialized in cosmetic dermatology, skin cancer treatment, and advanced laser procedures. Known for his gentle approach and cutting-edge treatments.",
       "availability": [
-        { "day": "Tuesday", "slots": [{ "id": "3", "startTime": "11:00", "endTime": "11:30", "isBooked": false }, { "id": "3a", "startTime": "11:30", "endTime": "12:00", "isBooked": false }] },
-        { "day": "Thursday", "slots": [{ "id": "4", "startTime": "14:00", "endTime": "14:30", "isBooked": false }, { "id": "4a", "startTime": "15:00", "endTime": "15:30", "isBooked": false }] }
+        {
+          "day": "Tuesday",
+          "slots": [
+            {
+              "id": "3",
+              "startTime": "11:00",
+              "endTime": "11:30",
+              "isBooked": false
+            },
+            {
+              "id": "3a",
+              "startTime": "11:30",
+              "endTime": "12:00",
+              "isBooked": false
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "slots": [
+            {
+              "id": "4",
+              "startTime": "14:00",
+              "endTime": "14:30",
+              "isBooked": false
+            },
+            {
+              "id": "4a",
+              "startTime": "15:00",
+              "endTime": "15:30",
+              "isBooked": false
+            }
+          ]
+        }
       ],
       "isApproved": true
     },
@@ -59,9 +139,45 @@
       "reviewCount": 156,
       "bio": "Dedicated pediatrician with a gentle approach to child healthcare. Dr. Williams specializes in newborn care, childhood development, and preventive health.",
       "availability": [
-        { "day": "Monday", "slots": [{ "id": "5", "startTime": "08:00", "endTime": "08:30", "isBooked": false }, { "id": "5a", "startTime": "08:30", "endTime": "09:00", "isBooked": false }] },
-        { "day": "Wednesday", "slots": [{ "id": "5b", "startTime": "09:00", "endTime": "09:30", "isBooked": false }] },
-        { "day": "Friday", "slots": [{ "id": "6", "startTime": "15:00", "endTime": "15:30", "isBooked": false }] }
+        {
+          "day": "Monday",
+          "slots": [
+            {
+              "id": "5",
+              "startTime": "08:00",
+              "endTime": "08:30",
+              "isBooked": false
+            },
+            {
+              "id": "5a",
+              "startTime": "08:30",
+              "endTime": "09:00",
+              "isBooked": false
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "slots": [
+            {
+              "id": "5b",
+              "startTime": "09:00",
+              "endTime": "09:30",
+              "isBooked": false
+            }
+          ]
+        },
+        {
+          "day": "Friday",
+          "slots": [
+            {
+              "id": "6",
+              "startTime": "15:00",
+              "endTime": "15:30",
+              "isBooked": false
+            }
+          ]
+        }
       ],
       "isApproved": true
     },
@@ -81,9 +197,39 @@
       "reviewCount": 98,
       "bio": "Expert in joint replacement, sports medicine, and minimally invasive surgical techniques. Dr. Wilson has performed over 5,000 successful surgeries.",
       "availability": [
-        { "day": "Tuesday", "slots": [{ "id": "7a", "startTime": "10:00", "endTime": "10:30", "isBooked": false }] },
-        { "day": "Wednesday", "slots": [{ "id": "7", "startTime": "09:00", "endTime": "09:30", "isBooked": false }] },
-        { "day": "Thursday", "slots": [{ "id": "7b", "startTime": "11:00", "endTime": "11:30", "isBooked": false }] }
+        {
+          "day": "Tuesday",
+          "slots": [
+            {
+              "id": "7a",
+              "startTime": "10:00",
+              "endTime": "10:30",
+              "isBooked": false
+            }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "slots": [
+            {
+              "id": "7",
+              "startTime": "09:00",
+              "endTime": "09:30",
+              "isBooked": false
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "slots": [
+            {
+              "id": "7b",
+              "startTime": "11:00",
+              "endTime": "11:30",
+              "isBooked": false
+            }
+          ]
+        }
       ],
       "isApproved": true
     },
@@ -103,8 +249,34 @@
       "reviewCount": 112,
       "bio": "Specialized in treating migraines, epilepsy, and neurodegenerative disorders. Dr. Sharma combines advanced diagnostics with compassionate patient care.",
       "availability": [
-        { "day": "Monday", "slots": [{ "id": "8", "startTime": "10:00", "endTime": "10:30", "isBooked": false }] },
-        { "day": "Thursday", "slots": [{ "id": "8a", "startTime": "13:00", "endTime": "13:30", "isBooked": false }, { "id": "8b", "startTime": "14:00", "endTime": "14:30", "isBooked": false }] }
+        {
+          "day": "Monday",
+          "slots": [
+            {
+              "id": "8",
+              "startTime": "10:00",
+              "endTime": "10:30",
+              "isBooked": false
+            }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "slots": [
+            {
+              "id": "8a",
+              "startTime": "13:00",
+              "endTime": "13:30",
+              "isBooked": false
+            },
+            {
+              "id": "8b",
+              "startTime": "14:00",
+              "endTime": "14:30",
+              "isBooked": false
+            }
+          ]
+        }
       ],
       "isApproved": true
     }
@@ -150,7 +322,7 @@
       "patientId": "patient-1",
       "patientName": "John Doe",
       "doctorId": "doc-1",
-      "doctorName": "Dr. Sarah Johnson",
+      "doctorName": "Dr. Tasin",
       "date": "2026-02-10",
       "time": "10:00",
       "status": "confirmed",
@@ -161,7 +333,7 @@
       "patientId": "patient-1",
       "patientName": "John Doe",
       "doctorId": "doc-2",
-      "doctorName": "Dr. Michael Chen",
+      "doctorName": "Dr. Monjurul",
       "date": "2026-02-12",
       "time": "14:00",
       "status": "pending",
