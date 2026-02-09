@@ -1,5 +1,15 @@
-import { Link } from 'react-router-dom';
-import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, ArrowRight } from 'lucide-react';
+import { Link } from "react-router-dom";
+import {
+  Heart,
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  ArrowRight,
+} from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,13 +27,14 @@ export function Footer() {
               <span className="text-xl font-bold">MediBook</span>
             </Link>
             <p className="text-sm opacity-80 max-w-xs">
-              Your trusted partner in healthcare. Book appointments with verified doctors easily and efficiently.
+              Your trusted partner in healthcare. Book appointments with
+              verified doctors easily and efficiently.
             </p>
             <div className="flex gap-3">
               {[Facebook, Twitter, Linkedin, Instagram].map((Icon, index) => (
-                <a 
+                <a
                   key={index}
-                  href="#" 
+                  href="#"
                   className="h-10 w-10 rounded-full bg-background/10 flex items-center justify-center opacity-60 hover:opacity-100 hover:bg-primary hover:scale-110 transition-all duration-300"
                 >
                   <Icon className="h-4 w-4" />
@@ -37,15 +48,15 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               {[
-                { to: '/doctors', label: 'Find Doctors' },
-                { to: '/specializations', label: 'Specializations' },
-                { to: '/how-it-works', label: 'How It Works' },
-                { to: '/about', label: 'About Us' },
-                { to: '/contact', label: 'Contact' },
+                { to: "/doctors", label: "Find Doctors" },
+                { to: "/specializations", label: "Specializations" },
+                { to: "/how-it-works", label: "How It Works" },
+                { to: "/about", label: "About Us" },
+                { to: "/contact", label: "Contact" },
               ].map((link) => (
                 <li key={link.to}>
-                  <Link 
-                    to={link.to} 
+                  <Link
+                    to={link.to}
                     className="opacity-60 hover:opacity-100 hover:text-primary inline-flex items-center gap-1 group transition-all duration-200"
                   >
                     {link.label}
@@ -61,15 +72,15 @@ export function Footer() {
             <h4 className="font-semibold mb-4">For Users</h4>
             <ul className="space-y-2 text-sm">
               {[
-                { to: '/register', label: 'Register as Patient' },
-                { to: '/register', label: 'Join as Doctor' },
-                { to: '/faq', label: 'FAQ' },
-                { to: '/privacy', label: 'Privacy Policy' },
-                { to: '/terms', label: 'Terms & Conditions' },
+                { to: "/register", label: "Register as Patient" },
+                { to: "/register", label: "Join as Doctor" },
+                { to: "/faq", label: "FAQ" },
+                { to: "/privacy", label: "Privacy Policy" },
+                { to: "/terms", label: "Terms & Conditions" },
               ].map((link) => (
                 <li key={link.label}>
-                  <Link 
-                    to={link.to} 
+                  <Link
+                    to={link.to}
                     className="opacity-60 hover:opacity-100 hover:text-primary inline-flex items-center gap-1 group transition-all duration-200"
                   >
                     {link.label}
@@ -86,11 +97,11 @@ export function Footer() {
             <ul className="space-y-3 text-sm opacity-80">
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>123 Healthcare Ave, Medical City</span>
+                <span>Dhaka, Bangladesh</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+880177123-4567</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0" />
@@ -103,9 +114,24 @@ export function Footer() {
         <div className="border-t border-background/20 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-60">
           <p>© {currentYear} MediBook. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link to="/privacy" className="hover:opacity-100 hover:text-primary transition-all">Privacy Policy</Link>
-            <Link to="/terms" className="hover:opacity-100 hover:text-primary transition-all">Terms of Service</Link>
-            <Link to="/faq" className="hover:opacity-100 hover:text-primary transition-all">FAQ</Link>
+            <Link
+              to="/privacy"
+              className="hover:opacity-100 hover:text-primary transition-all"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms"
+              className="hover:opacity-100 hover:text-primary transition-all"
+            >
+              Terms of Service
+            </Link>
+            <Link
+              to="/faq"
+              className="hover:opacity-100 hover:text-primary transition-all"
+            >
+              FAQ
+            </Link>
           </div>
         </div>
       </div>
